@@ -36,7 +36,7 @@ AVRDUDE_FUSES =
 # and then uncomment OVERRIDE_AVRDUDE_FUSES
 
 #AVRDUDE_FUSES += -U lfuse:w:0xFF:m
-#AVRDUDE_FUSES += -U hfuse:w:0xFF:m
+AVRDUDE_FUSES += -U hfuse:w:0x98:m
 #AVRDUDE_FUSES += -U efuse:w:0xFF:m
 #AVRDUDE_FUSES += -U lock:w:0xFF:m
 
@@ -122,7 +122,7 @@ WATCHDOG_TIMEOUT      = WDT_PER_1KCLK_gc
 
 # LED
 LED_PORT_NAME         = B
-LED_PIN               = 1
+LED_PIN               = 2
 LED_INV               = 1
 
 # UART
